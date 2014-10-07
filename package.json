@@ -42,7 +42,7 @@
     }
   ],
   "dependencies": {
-    "node-pre-gyp": "0.5.x",
+    "node-pre-gyp": "git://github.com/Mithgol/node-pre-gyp.git#support-atom-shell",
     "bindings": "1.2.1",
     "async": "0.9.0",
     "sf": "0.1.7",
@@ -69,7 +69,7 @@
     "serialportterm": "./bin/serialportTerminal.js"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "node-pre-gyp install --fallback-to-build --runtime=atom-shell",
     "test": "grunt --verbose"
   }
 }

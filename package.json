@@ -1,6 +1,6 @@
 {
   "name": "serialport",
-  "version": "1.4.6",
+  "version": "1.6.2",
   "description": "Welcome your robotic javascript overlords. Better yet, program them!",
   "author": {
     "name": "Chris Williams",
@@ -8,11 +8,11 @@
     "url": "http://www.voodootikigod.com"
   },
   "binary": {
-    "module_name" : "serialport",
-    "module_path" : "./build/{module_name}/v{version}/{configuration}/{node_abi}-{platform}-{arch}/",
-    "remote_path" : "./{module_name}/v{version}/{configuration}/",
+    "module_name": "serialport",
+    "module_path": "./build/{module_name}/v{version}/{configuration}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{version}/{configuration}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
-    "host"        : "https://node-serialport.s3.amazonaws.com"
+    "host": "https://node-serialport.s3.amazonaws.com"
   },
   "main": "./serialport",
   "repository": {
@@ -42,14 +42,17 @@
     }
   ],
   "dependencies": {
-    "node-pre-gyp": "git://github.com/Mithgol/node-pre-gyp.git#support-atom-shell",
-    "bindings": "1.2.1",
     "async": "0.9.0",
-    "sf": "0.1.7",
+    "bindings": "1.2.1",
+    "debug": "^2.1.1",
+    "nan": "1.7.0",
+    "node-pre-gyp": "git://github.com/Mithgol/node-pre-gyp.git#support-atom-shell",
     "optimist": "~0.6.1",
-    "nan": "~1.3.0"
+    "sf": "0.1.7"
   },
-  "bundledDependencies":["node-pre-gyp"],
+  "bundledDependencies": [
+    "node-pre-gyp"
+  ],
   "devDependencies": {
     "mocha": "*",
     "chai": "*",
@@ -62,7 +65,7 @@
     "sandboxed-module": "~0.3.0"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "bin": {
     "serialportlist": "./bin/serialportList.js",

@@ -10,7 +10,7 @@
   "binary": {
     "module_name": "serialport",
     "module_path": "build/{configuration}/",
-    "host": "https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.1"
+    "host": "https://github.com/suda/node-serialport/releases/download/4.0.1"
   },
   "main": "./lib/serialport",
   "repository": {
